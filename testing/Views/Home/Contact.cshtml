@@ -1,17 +1,22 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+﻿<div id="dialogContainer" ng-controller="dialogController as ctrl" layout="row" ng-cloak>
+    <md-content>
+        <h4>Standard Alert</h4>
+        <md-button class="md-primary md-raised" ng-click="showAlert($event)" flex="100" flex-gt-md="auto">
+            Alert
+        </md-button>
+        <h4>Confirm Dialog Box</h4>
+        <md-button class="md-primary md-raised" ng-click="showConfirm($event)" flex="100" flex-gt-md="auto">
+            Confirm
+        </md-button>
+        <h4>Custom Dialog Box</h4>
+        <md-button class="md-primary md-raised" ng-click="showCustom($event)" flex="100" flex-gt-md="auto">
+            Custom
+        </md-button>
+        <div ng-if="status">
+            <br />
+            <b layout="row" layout-align="center center" class="md-padding">
+                {{status}}
+            </b>
+        </div>
+    </md-content>
+</div>

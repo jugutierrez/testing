@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Postal;
 
 namespace testing.Controllers
 {
     public class HomeController : Controller
     {
+        Envia_Correo c = new Envia_Correo();
         public ActionResult Index()
         {
             return View();
@@ -15,7 +17,7 @@ namespace testing.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            c.enviar();
 
             return View();
         }
