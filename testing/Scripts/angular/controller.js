@@ -50,5 +50,14 @@
                   }
                });
             };
-         }                 
+         }
+
+
+      
+         app.controller('ExampleController', ['$scope', function ($scope) {
+             $scope.templates =
+               [{ name: 'template1.html', url: '/Home/Contact' },
+                { name: 'template2.html', url: '/Home/About' }];
+             $scope.template = $scope.templates[0];
+         }]);
     

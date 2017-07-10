@@ -17,7 +17,7 @@ namespace testing.Controllers
 
         public ActionResult About()
         {
-            c.enviar();
+           // c.enviar();
 
             return View();
         }
