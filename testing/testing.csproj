@@ -188,6 +188,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\panelController.cs" />
     <Compile Include="Envia_Correo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1054,6 +1055,10 @@
     <Content Include="Views\Emails\_ViewStart.cshtml" />
     <Content Include="Views\Emails\Web.config" />
     <Content Include="Views\Emails\Example.cshtml" />
+    <Content Include="Views\panel\_panel_mis_ofertas.cshtml" />
+    <Content Include="Views\panel\_panel_informes.cshtml" />
+    <Content Include="Views\panel\_panel_agregar_bodegas.cshtml" />
+    <Content Include="Views\panel\_index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
